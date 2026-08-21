@@ -1,1 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: #080808;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 7%;
+    border-bottom: 1px solid #292929;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.status {
+    margin-left: auto;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+
+    background: #53ff72;
+    border-radius: 50%;
+
+    margin-right: 7px;
+}
+
+
+main {
+    width: 86%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+.hero {
+    padding: 110px 0 90px;
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 9vw, 120px);
+    line-height: 0.88;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: #777;
+}
+
+.description {
+    margin-top: 35px;
+    color: #999;
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.section-heading p {
+    color: #777;
+    margin-top: 7px;
+}
+
+
+.chemical-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.chemical-card {
+    border: 1px solid #292929;
+    padding: 28px;
+
+    background: #0d0d0d;
+
+    transition: 0.25s;
+}
+
+.chemical-card:hover {
+    border-color: #777;
+    transform: translateY(-4px);
+}
+
+
+.chemical-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chemical-code {
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.chemical-card h3 {
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+
+.trend {
+    font-size: 12px;
+}
+
+.up {
+    color: #53ff72;
+}
+
+.down {
+    color: #ff5555;
+}
+
+
+.price {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 45px 0 25px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.info strong {
+    color: white;
+}
+
+
+.bar {
+    height: 3px;
+    background: #252525;
+    margin: 12px 0 25px;
+}
+
+.bar-fill {
+    width: 70%;
+    height: 100%;
+    background: white;
+}
+
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    background: white;
+    color: black;
+
+    border: none;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+
+.activity {
+    padding: 100px 0;
+}
+
+.activity-box {
+    border-top: 1px solid #292929;
+}
+
+.activity-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    padding: 20px 10px;
+
+    border-bottom: 1px solid #292929;
+
+    color: #aaa;
+}
+
+.activity-row strong {
+    color: white;
+    text-align: right;
+}
+
+
+footer {
+    border-top: 1px solid #292929;
+
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #666;
+    font-size: 11px;
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .status {
+        margin-left: 0;
+    }
+
+    .chemical-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
