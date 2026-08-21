@@ -10,6 +10,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ================= HEADER ================= */
+
 header {
     padding: 25px 7%;
     border-bottom: 1px solid #292929;
@@ -48,6 +50,7 @@ header {
     margin-right: 7px;
 }
 
+/* ================= MAIN ================= */
 
 main {
     width: 86%;
@@ -55,6 +58,7 @@ main {
     margin: auto;
 }
 
+/* ================= HERO ================= */
 
 .hero {
     padding: 110px 0 90px;
@@ -85,6 +89,7 @@ main {
     line-height: 1.7;
 }
 
+/* ================= SECTION HEADINGS ================= */
 
 .section-heading {
     margin-bottom: 30px;
@@ -100,13 +105,13 @@ main {
     margin-top: 7px;
 }
 
+/* ================= CHEMICAL CARDS ================= */
 
 .chemical-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
-
 
 .chemical-card {
     border: 1px solid #292929;
@@ -121,7 +126,6 @@ main {
     border-color: #777;
     transform: translateY(-4px);
 }
-
 
 .chemical-top {
     display: flex;
@@ -139,6 +143,7 @@ main {
     font-size: 22px;
 }
 
+/* ================= PRICE TREND ================= */
 
 .trend {
     font-size: 12px;
@@ -152,13 +157,13 @@ main {
     color: #ff5555;
 }
 
-
 .price {
     font-size: 45px;
     font-weight: bold;
     margin: 45px 0 25px;
 }
 
+/* ================= DEMAND ================= */
 
 .info {
     display: flex;
@@ -173,6 +178,7 @@ main {
     color: white;
 }
 
+/* ================= DEMAND BAR ================= */
 
 .bar {
     height: 3px;
@@ -186,6 +192,7 @@ main {
     background: white;
 }
 
+/* ================= BUTTON ================= */
 
 button {
     width: 100%;
@@ -206,6 +213,7 @@ button:hover {
     background: #ccc;
 }
 
+/* ================= MARKET ACTIVITY ================= */
 
 .activity {
     padding: 100px 0;
@@ -231,6 +239,7 @@ button:hover {
     text-align: right;
 }
 
+/* ================= FOOTER ================= */
 
 footer {
     border-top: 1px solid #292929;
@@ -244,6 +253,7 @@ footer {
     font-size: 11px;
 }
 
+/* ================= MOBILE ================= */
 
 @media (max-width: 800px) {
 
